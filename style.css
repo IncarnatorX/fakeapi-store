@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00ffff;
+  font-family: Rubik;
+}
+
+/* MOBILE SECTION */
+
+@media (min-width: 250px) and (max-width: 754px) {
+  .nav-bar {
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .brand {
+    display: none;
+  }
+
+  .brand-heading {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  .search {
+    margin: 0.5rem 0;
+  }
+
+  .search input {
+    border: none;
+    padding: 0.4rem;
+    border-radius: 0.7rem;
+  }
+
+  .search input:focus {
+    outline: none;
+  }
+
+  .search button {
+    border: none;
+    background-color: #802c6e;
+    padding: 0.4rem;
+    color: white;
+    border-radius: 0.7rem;
+  }
+
+  .search .btn:active {
+    transform: translateY(1px);
+  }
+
+  /* PRODUCTS SECTION */
+
+  .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .card-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 0.7rem;
+    mix-blend-mode: multiply;
+  }
+
+  .card h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .card h4 {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .cart-btn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+
+  .cart-btn:active {
+    transform: translateY(1px);
+  }
+
+  /* FOOTER */
+  .foo {
+    background-color: gold;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+/* TAB AND DESKTOP SECTION */
+
+@media (min-width: 755px) {
+  /* NAVBAR SECTION */
+
+  .nav-bar {
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .brand {
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .brand-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-name {
+    text-decoration: none;
+    color: #802c6e;
+  }
+
+  .brand-heading {
+    justify-self: center;
+    color: #802c6e;
+  }
+
+  .search {
+    justify-self: flex-end;
+    margin: 0 0.5rem;
+  }
+
+  .search input {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+  }
+
+  .search input:focus {
+    outline: none;
+  }
+
+  .search button {
+    border: none;
+    background-color: #802c6e;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.7rem;
+  }
+
+  .search .btn:active {
+    transform: translateY(1px);
+  }
+
+  .search .btn:hover {
+    cursor: pointer;
+  }
+
+  /* PRODUCTS SECTION */
+
+  .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 500px;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .card-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 0.7rem;
+    mix-blend-mode: multiply;
+  }
+
+  .card h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .card h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .cart-btn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+
+  .cart-btn:hover {
+    cursor: pointer;
+  }
+
+  .cart-btn:active {
+    transform: translateY(1px);
+  }
+
+  /* FOOTER */
+  .foo {
+    background-color: gold;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
