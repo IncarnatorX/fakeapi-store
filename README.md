@@ -1,3 +1,3 @@
 # fakeapi-store
 
-https://user-vishnu.github.io/fakeapi-store/
+https://IncarnatorX.github.io/fakeapi-store/
